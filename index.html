@@ -1,351 +1,661 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<style>
-            html, body {
-                width: 100%;
-                height: 100%;
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Mohamed Diab Online CV">
+	<meta name="author" content="Mohamed Diab">
 
-                margin: 0;
-                padding: 0;
-                background-image:url("background.jpg");
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
-            h1 {
+	<title>Mohamed Diab Online Resume</title>
 
-                margin: 0;
-                padding: 0;
-            }
-		ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
-body { font-family: "Segoe UI","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Arial,Tahoma,Verdana,sans-serif; font-size:13px; }
-h1 { font: bold 40px/40px Helvetica, Arial, Sans-serif; text-align: center; color: #121621; text-shadow: 0px 2px 6px #333; }
-h1 small{ font-size: 20px; text-transform:uppercase; letter-spacing: 14px; display: block; color: #000000; }
-h2 a { display: block; text-decoration: none; margin: 0 0 30px 0; font: italic 45px Georgia, Times, Serif;  text-align: center; color: #312400; text-shadow: 0px 2px 6px #333; }
-h2 a:hover { color: #AF7F00; }
-h3 { clear:both; padding:20px 0 0 60px; }
-p { padding:5px 10px; }
-a { color:#AF7F00; text-decoration:underline; }
-a:hover { text-decoration:none; }
+  <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- Magnific css -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+  <!-- Responsive CSS -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
 
-.break { clear:both; }
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-#wrapper { width:800px; margin:40px auto; }
+  <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
 
-.social { list-style:none; margin:30px auto; width:464px; }
-.social li { display:inline; float:left; background-repeat:no-repeat; }
-.social li a { display:block; width:48px; height:48px; padding-right:10px; position:relative; text-decoration:none; }
-.social li a strong { font-weight:normal; position:absolute; left:20px; top:-1px; color:#fff; padding:3px; z-index:9999;
- text-shadow:1px 1px 0 rgba(0, 0, 0, 0.75); background-color:rgba(0, 0, 0, 0.7);
- -moz-border-radius:3px; -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -webkit-border-radius:3px; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); border-radius:3px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-li.facebook { background-image:url("facebook.png"); position:fixed;
-top:40%;
-left:50%; 
-}
-li.google { background-image:url("google.png"); 
-position:fixed;
-top:40%;
-left:60%;
-}
-li.linkedin { background-image:url("linkedin.png"); position:fixed;
-top:40%;
-left:70%;
- }
-li.twitter { background-image:url("twitter.png");
-position:fixed;
-top:40%;
-left:80%;
-}
-
-#css3:hover li { opacity:0.2; }
-
-#css3 li { -webkit-transition-property: opacity; -webkit-transition-duration: 500ms;
- -moz-transition-property: opacity; -moz-transition-duration: 500ms; }
-#css3 li a strong { opacity:0;
- -webkit-transition-property: opacity, top; -webkit-transition-duration: 300ms;
- -moz-transition-property: opacity, top; -moz-transition-duration: 300ms; }
-
-#css3 li:hover { opacity:1; }
-#css3 li:hover a strong { opacity:1; top:-10px; }
-
-
-
-.slides {
-    padding: 0;
-    width: 250px;
-    height: 150px;
-    display: block;
-    margin: 0 auto;
-    position:fixed;
-    top:70%;
-    left:70%; 
-   
-}
-
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-}
-
-.slides input { display: none; }
-
-.slide-container { display: block; }
-
-.slide {
-    top: 0;
-    opacity: 0;
-    width: 250px;
-    height: 150px;
-    display: block;
-    position:fixed;
-    top:70%;
-    left:70%; 
-
-
-    transform: scale(0);
-
-    transition: all .7s ease-in-out;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-
-.nav label {
-    width: 100px;
-    height: 0%;
-    display: none;
-    position: absolute;
-
-	  opacity: 0;
-    z-index: 9;
-    cursor: pointer;
-
-    transition: opacity .2s;
-
-    color: #FFF;
-    font-size: 156pt;
-    text-align: center;
-    line-height:  100%;
-    font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
-    text-shadow: 0px 0px 15px rgb(119, 119, 119);
-}
-
-.slide:hover + .nav label { opacity: 0.5; }
-
-.nav label:hover { opacity: 1; }
-
-.nav .next { right: 0; }
-
-input:checked + .slide-container  .slide {
-    opacity: 1;
-
-    transform: scale(1);
-
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container .nav label { display: block; }
-
-.nav-dots {
-	width: 100%;
-	bottom: 9px;
-	height: 11px;
-	display: block;
-	position: absolute;
-	text-align: center;
-}
-
-.nav-dots .nav-dot {
-	top: -5px;
-	width: 11px;
-	height: 11px;
-	margin: 0 4px;
-	position: relative;
-	border-radius: 100%;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-.nav-dots .nav-dot:hover {
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.8);
-}
-
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4 {
-	background: rgba(0, 0, 0, 0.8);
-}
-
-.text
-{
-text-align: left; 
-  font-size: 20px;
-  font-style:italic; font-family:Times; font-size: 200; text-align: center;
-}
-
-
-
-div.transbox
-  {
-  width:225px;
-  height:25px;
-  position:fixed;
-  top:93%;
-  left:71%;
-  background-color:#ffffff;
-  border:1px solid black;
-  opacity:0.6;
-  filter:alpha(opacity=60);
-  }
-div.transbox p
-  {
-  margin:2% 10%;
-  font-weight:bold;
-  font-style: italic;
-  font-family: Times;
-  color:#000000;
-  }
-
-.GUC
-{
-position:fixed;
-top:2%;
-left:95%;
-}
-
-.header
-{
-  font-style:italic; font-family:Times; font-size:100;
-}
-
-.image_specs
-{
-position:fixed;
-top:32%;
-left:10%;
-border: 8px solid #666;
-border-color: rgb(0, 49, 83);
-width:70%;
-width:350px;
-height:200px;
-box-shadow: 10px 10px 5px #888888;
-}
-
-</style>
 </head>
 
-
 <body>
+	<!-- Preloader -->
+	<div id="tt-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
 
-<h1> Welcome to My Personal Profile </h1>
+	<!-- Home Section -->
+	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+		<div class="intro">
+			<div class="intro-sub">I am Mohamed Diab</div>
+			<h1>Creative <span>Developer</span></h1>
+			<p>A highly motivated and hardworking individual seeking an apprenticeship in software engineering industry and start a career as a software or web developer. <br> Eventual career goal is to become a fully-qualified and experienced software or web developer, with the longer-term aspiration of moving into project management.</p>
+
+      <div class="social-icons">
+        <ul class="list-inline">
+          <li><a href="https://www.facebook.com/mohamedsaeed93"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://plus.google.com/u/0/+mohamedsaeed93"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mohamedsaeed93/"><i class="fa fa-linkedin "></i></a></li>
+          <li><a href="https://github.com/mohamedsaeed93/"><i class="fa fa-github "></i></a></li>
+        </ul>
+      </div> <!-- /.social-icons -->
+		</div>
+
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+	</section><!-- End Home Section -->
+
+	<!-- Navigation -->
+	<header class="header">
+		<nav class="navbar navbar-custom" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#facts">Facts</a></li>
+					</ul>
+				</div>
+			</div><!-- .container -->
+		</nav>
+	</header><!-- End Navigation -->
 
 
-<h1 class="header"> Mohamed Saeed </h1>
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">About Me</h2>
+
+        <div class="row">
+
+          <div class="col-md-4 col-md-push-8">
+            <div class="biography">
+              <div class="myphoto">
+                <img src="assets/images/myphoto.jpg" alt="">
+              </div>
+              <ul>
+                <li><strong>Name:</strong> Mohamed Diab</li>
+                <li><strong>Date of birth:</strong> 11 May 1993</li>
+                <li><strong>Address:</strong> Julius-Raab-Straße 10, 4040 Linz</li>
+                <li><strong>Nationality:</strong> Italian/Egyptian</li>
+                <li><strong>Phone:</strong> (+43) 68864868994</li>
+                <li><strong>Email:</strong> mohamed.elsaeed93@gmail.com</li>
+                <li><strong>Skype:</strong> mohamed.saeed124</li>
+              </ul>
+            </div>
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-8 col-md-pull-4">
+            <div class="short-info wow fadeInUp">
+              <h3>Objective</h3>
+              <p>An opportunity to work and improve my skills, as well as being involved in an organization that uses new technologies and wants to always be competitive. I am improving my skills in web and mobile development. I hope to develop skills in data science and machine learning as well. I’m a forward thinker and love working with a team where we could inspire each other.
+              </p>
+            </div>
+
+            <div class="short-info wow fadeInUp">
+              <h3>What I Do ?</h3>
+              <p>I develop web applications using Ruby on Rails and MeteorJS. I also worked as an android developer. I focus on write clean code and follow best practices. I am interested in data analysis and machine learning. </p>
+
+              <ul class="list-check">
+                <li>Software Development</li>
+                <li>Web Development</li>
+                <li>Mobile Android Development</li>
+                <li>Data Analysis</li>
+                <li>Sales Engineering</li>
+                <li>Product Management</li>
+              </ul>
+            </div>
+
+            <div class="my-signature">
+              <img src="assets/images/approved.png" alt="">
+            </div>
+
+            <div class="download-button">
+              <a class="btn btn-info btn-lg" href="mailto:mohamed.elsaeed93@gmail.com"><i class="fa fa-paper-plane"></i>Send me an email</a>
+              <a class="btn btn-primary btn-lg" href="cv.pdf"><i class="fa fa-download"></i>open Pdf CV</a>
+            </div>
+          </div>
 
 
-<p class="text">
-  My Name is Mohamed Mahmoud ElSaeed , I was born in italy, I am 20 years old, I love video games that is the reason why i was interested in programming , My dreamjob is to work in ubisoft.  
-</p>
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section><!-- End About Section -->
+    
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                           <li>
+                                <div class="posted-date">
+                                    <span class="month">September 2016-July 2017</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Masters degree certificate</h3>
+                                            <span> in JKU International Master's Program Informatics,
+                                            <br> Johannes Kepler University</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Topic: Cross Platform Customer Portal.<br> 
+                                              Company: Lenzing.
+                                              <br> 
+                                              Framework used: Ruby on Rails</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">March 2015-September 2015</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Bachelor Thesis in University of Augsburg</h3>
+                                            <span>University of Augsburg</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Topic: Activities Recognition from Wearable Sensors.Framework used: SSI Framework. Device used: Myo Gesture Control Armband. Grade: A+
+                                            </p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                    <span class="month">September 2010-June 2016</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Bachelor degree certificate</h3>
+                                            <span> in Media Engineering and Technology(Computer Engineering),<br>German University in Cairo</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Accumulative GPA: 1.27 in the German Systems. <br>
+                                             Grade: Excellent with High Honors</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2007-2010</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Secondary school certificate</h3>
+                                            <span>El Makrizy Language School, Cairo, Egypt/span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Score: 98.7% in Thanaweya Amma (Egyptian High School Score)
+                                            </p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experience</h3>
+                    </div>
+
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">February 2017-Present</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Android Developer</h3>
+                                            <span>University of Applied Sciences - FH OOE, Linz (Austria)</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Added libraries and plug-ins needed for Cryptography<br>Implementing electronic driving licence for smart phones<br>Implementing Protocols needed for data integrity</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">June 2014-August 2014</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Tim Intern</h3>
+                                            <span>Tim, Rome (Italy)</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Adding libraries and plug-ins needed for JavaScript<br>Fixing bugs in the website upon request from Support Department<br>Taking users stories and implementing their frontend and backend</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">June 2013-August 2013</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Trainee</h3>
+                                            <span>SYSCO [Sistemi Di Comunicazione dal 1978], Rome (Italy)</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Getting familiar with C# language and visual studio IDE
+                                            <br>Writing programs for arrival/departure LED screens in Railway Stations.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /.container -->
+    </section><!-- End Resume Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Skills</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Java</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ><span>90%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Ruby on Rails</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ><span>70%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>HTML</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" ><span>85%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+                       <div class="skill-progress">
+              <div class="skill-title"><h3>CSS</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Javascript</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>MVC Pattern</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ><span>90%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+             <div class="skill-progress">
+              <div class="skill-title"><h3>Git/SVN</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Android</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ><span>70%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+             <div class="skill-progress">
+              <div class="skill-title"><h3>Machine Learning</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ><span>70%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+             <div class="skill-progress">
+              <div class="skill-title"><h3>R</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" ><span>65%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>MeteorJS</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+ 
+
+             <div class="skill-progress">
+              <div class="skill-title"><h3>C, C#, C++</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>SQL</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>ASP.NET</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Python</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
 
 
+            <div class="skill-progress">
+              <div class="skill-title"><h3>PHP</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" ><span>40%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
 
-<div class="image_specs">
-<img src="me.jpg" alt="My Profile Picture" width="350" height="200" >  
-</div>
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Matlab</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Haskell</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Prolog</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
 
 
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Mathematica</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
 
-<ul class="slides">
-    <input type="radio" name="radio-btn" id="img-1" checked />
-    <li class="slide-container">
-    <div class="slide">
-      <img src="1.jpg" />
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>LaTeX</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Microsoft Office</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+
+        <div class="skill-chart text-center">
+          <h3>More skills</h3>
         </div>
-    <div class="nav">
-      <label for="img-6" class="prev">&#x2039;</label>
-      <label for="img-2" class="next">&#x203a;</label>
-    </div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-2" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="2.jpg" />
+          
+        <div class="row more-skill text-center">
+          <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="90" data-color="e74c3c">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Communication</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="85" data-color="2ecc71">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Creativity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="85" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Presentation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="85" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="90" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Agile  & Scrum</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="80" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Team Work</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    <div class="nav">
-      <label for="img-1" class="prev">&#x2039;</label>
-      <label for="img-3" class="next">&#x203a;</label>
-    </div>
-    </li>
 
-    <input type="radio" name="radio-btn" id="img-3" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="3.jpg" />
+      </div><!-- /.container -->
+    </section><!-- End Skills Section -->
+       
+    <!-- Facts Section -->
+    <section id="facts" class="facts-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="tt-overlay-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="count-wrap">
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-flask"></i>
+                  <h3 class="timer">1</h3>
+                  <p>Years of Experience</p>
+                </div>
+                <div class="col-sm-3 col-xs-6"> 
+                  <i class="fa fa-thumbs-up"></i>
+                  <h3 class="timer">26</h3>                
+                  <p>Projects Done</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-users"></i>
+                  <h3 class="timer">2</h3> 
+                  <p>Happy Clients</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-trophy"></i>
+                  <h3 class="timer">1</h3> 
+                  <p>Awards Won</p>
+                </div>
+              </div><!-- /count-wrap -->
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div>
+    </section> <!-- End Facts Section -->
+
+    <!-- Hire Section -->
+    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="hire-section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>I am available</h2>
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.hire-section-bg -->
+    </section><!-- End Hire Section -->
+
+	<!-- Footer Section -->
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright text-center">
+              <p>&copy; TrendyTheme 2015. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-    <div class="nav">
-      <label for="img-2" class="prev">&#x2039;</label>
-      <label for="img-4" class="next">&#x203a;</label>
-    </div>
-    </li>
+      </div>
+    </footer><!-- End Footer Section -->
 
-    <input type="radio" name="radio-btn" id="img-4" />
-    <li class="slide-container">
-        <div class="slide">
-          <img src="4.jpg" />
-        </div>
-    <div class="nav">
-      <label for="img-3" class="prev">&#x2039;</label>
-      <label for="img-5" class="next">&#x203a;</label>
-    </div>
-    </li>
 
-    <li class="nav-dots">
-      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-    </li>
-</ul>
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
 
-<div class="GUC">
-<img src="GUC.png" alt="GUC" width="30" height="30" > 
-</a> 
-</div>
-
-  <div id="content">
-    <ul class="social" id="css3">
-      <li class="facebook">
-        <a href="https://www.facebook.com/mohamedsaeed93"><strong>Facebook</strong></a>
-      </li>
-      <li class="linkedin">
-        <a href="http://www.linkedin.com/"><strong>LinkedIn</strong></a>
-      </li>
-      <li class="twitter">
-        <a href="https://twitter.com/MuhammedSaeed93"><strong>Twitter</strong></a>
-      </li>
-           <li class="google">
-        <a href="https://plus.google.com/u/0/"><strong>Google+</strong></a>
-      </li>
-    </ul>
-  </div>
-
-    <div class="transbox">
-<p> Mohamed Saeed's Gallery
-</p>
-</div>
-
-    </body> 
-
+	<!-- Javascript files -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.inview.min.js"></script> 
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
 </html>
