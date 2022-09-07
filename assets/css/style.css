@@ -547,6 +547,7 @@ SOCIAL ICON
 
 .my-signature{
     margin-bottom: 45px;
+    margin-left: 15px;
 }
 .my-signature img{
     width: 150px;
@@ -557,6 +558,7 @@ SOCIAL ICON
 /*download-button*/
 .download-button a {
     margin-right: 20px;
+    margin-left: 10px;
     color: #fff;
 }
 .download-button a i {

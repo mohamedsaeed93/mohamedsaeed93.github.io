@@ -43,6 +43,8 @@
 
 	.download-button .btn{
 		margin-bottom: 20px;
+		margin-right: 4px;
+    	margin-left: 10px;
 	}
 
 
@@ -140,6 +142,7 @@
 
 	.personal-info .my-signature {
 	  	display: none;
+		margin-left: 10px;
 	}
 
 	.personal-info .download-button a{
@@ -283,6 +286,7 @@
 
 	.personal-info .my-signature {
 	    margin-bottom: 45px;
+		margin-left: 10px;
 	    display: block;
 	}
 
@@ -385,7 +389,8 @@
 		min-height: 150px;
 	}
 	.download-button a{
-		margin-right: 10px;
+		margin-right: 4px;
+    	margin-left: 10px;
 	}
 
 }
